@@ -87,7 +87,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-6 p-0">
-                    <div class="about-pic set-bg" data-setbg="img/services/Cabalgata.jpg">
+                    <div class="about-picDifferentPrice set-bg" data-setbg="img/services/Cabalgata.jpg">
                       <!--<a href="https://www.youtube.com/watch?v=hxADTEJalRw&list=WL&index=49&t=0s" class="play-btn video-popup"><i class="fa fa-play"></i></a>-->  
                     </div>
                 </div>
@@ -278,80 +278,119 @@
     <!-- Pricing Section End -->
 
 
-    <section class="site-section" id='pago'>
+    <section class="blog-details-section spad">
         <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <h2 class="mb-5">Reserva tu espacio</h2>
-                  <form class="email-form" method="post">
-                      <div class="row">
-                          <div class="col-md-12 form-group">
-                            <label for="Nombre">Nombre</label>
-                            <input type="text" id="Nombre" class="form-control ">
-                          </div>
-                        </div>
-                    <div class="row">
-                        <div class="col-sm-6 form-group">
-                            
-                            <label for="">Fecha</label>
-                            <div style="position: relative;">
-                              <span class="fa fa-calendar icon" style="position: absolute; right: 10px; top: 10px;"></span>
-                              <input type='text' class="form-control" id='Fecha' />
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="blog-details-text">
+                       
+                     <div class="bd-comment-form">
+                            <div class="row">
+                               
+                                <div class="col-lg-7">
+                                    <div class="leave-form">
+                                        <h4>Reserva ahora</h4>
+                                        <form action="#">
+                                            <input type="text" placeholder="Nombre">
+                                            <input type="text" placeholder="Apellido">
+                                            <select name="" id="Paquete" >
+                                                <option value="">Ligero</option>
+                                                <option value="">Intermedio</option>
+                                                <option value="">Encantador</option>
+                                                <option value="">Apasionante</option>
+                                                
+                                              </select>
+                                            <div style="position: relative;">
+                                              <span class="fa fa-calendar icon" style="position: absolute; right: 10px; top: 10px;"></span>
+                                              <input type='text' class="form-control" id='Fecha' placeholder="Fecha"/>
+                                            </div>
+                                            <input type="text" placeholder="Email">
+                                            <textarea placeholder="Comment"></textarea>
+                                            <button type="submit" class="site-btn">Agendar</button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="col-lg-1"></div>
+                                <div class="col-lg-4">
+                                    <h4>Paquetes similares</h4>
+                                    <div class="comment-item">
+                                        <div class="ci-pic">
+                                            <img src="img/categories/GloboAerostatico2.jpg" alt="">
+                                        </div>
+                                        <a href = './AirBalloonDetails.html'> 
+                                        <div class="ci-text">
+                                            
+                                            <h5>Paseo en Globo</h5>
+                                            <ul>
+                                                <li><i class="fa fa-euro"></i>--</li>
+                                                <li><i class="fa fa-clock-o"></i>1 dia</li>
+                                           
+                                               
+                                            </ul>
+                                        </div>
+                                        </a>
+                                    </div>
+                                    <div class="comment-item">
+                                        <div class="ci-pic">
+                                            <img src="img/categories/vintageTour.jpg" alt="">
+                                        </div>
+                                        <a href = './VintgeCar.html'> 
+                                        <div class="ci-text">
+                                            
+                                            <h5>  Carro Antiguio  </h5>
+                                            <ul>
+                                                <li><i class="fa fa-euro"></i>800</li>
+                                                <li><i class="fa fa-clock-o"></i>15</li>
+                                           
+                                               
+                                            </ul>
+                                        </div>
+                                        </a>
+                                    </div>
+                                    
+                                    <div class="comment-item">
+                                        <div class="ci-pic">
+                                            <img src="img/categories/Safari.jpg" alt="">
+                                        </div>
+                                      <a href = './SafariTour.html'> 
+                                         <div class="ci-text">
+                                            
+                                            <h5>Safari 4x4</h5>
+                                            <ul>
+                                                <li><i class="fa fa-euro"></i>800</li>
+                                                <li><i class="fa fa-clock-o"></i>14</li>
+                                           
+                                               
+                                            </ul>
+                                        </div></a>
+                                    </div>
+                                    <div class="comment-item">
+                                        <div class="ci-pic">
+                                            <img src="img/categories/NocheTurca.jpg" alt="">
+                                        </div>
+                                        <a href = './CulturalNight.html'> 
+                                        <div class="ci-text">
+                                            
+                                            <h5>Noche Cultural</h5>
+                                            <ul>
+                                                <li><i class="fa fa-euro"></i>500</li>
+                                                <li><i class="fa fa-clock-o"></i>8 dias</li>
+                                           
+                                               
+                                            </ul>
+                                        </div>
+                                        </a>
+                                    </div>
+                                  
+                                   
+                                </div>
                             </div>
                         </div>
-  
-                     
-                        
                     </div>
-  
-  
-                    <div class="row">
-                      <div class="col-md-6 form-group">
-                        <label for="Paquete">Paquete</label>
-                        <select name="" id="Paquete" class="form-control">
-                          <option value="">principiante</option>
-                          <option value="">Intermedio</option>
-                          <option value="">Avanzado</option>
-                          <option value="">profesional</option>
-                          
-                        </select>
-                      </div>
-  
-                      <div class="col-md-6 form-group">
-                        <label for="Huespedes">Huespedes</label>
-                        <select name="" id="Huespedes" class="form-control">
-                          <option value="">1 Huesped</option>
-                          <option value="">2 Huesped</option>
-                          <option value="">3 Huesped</option>
-                          <option value="">4 Huesped</option>
-                          <option value="">5+ Huesped</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-12 form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" class="form-control ">
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-12 form-group">
-                        <label for="message">Escribe una nota</label>
-                        <textarea name="message" id="message" class="form-control " cols="30" rows="8"></textarea>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-6 form-group">
-                        <input type="submit" value="Reserva ahora" class="btn btn-primary">
-                      </div>
-                    </div>
-                  </form>
                 </div>
-                
-              
-          </div>
+            </div>
         </div>
-      </section>
+    </section>
     <!-- Footer Section Begin -->
     <footer class="footer-section">
         <div class="container">

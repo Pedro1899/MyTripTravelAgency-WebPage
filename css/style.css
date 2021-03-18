@@ -31,6 +31,8 @@
 
 /* Template default CSS
 /*----------------------------------------*/
+@import url("https://fonts.googleapis.com/css?family=Nothing+You+Could+Do|Rubik:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Nothing+You+Could+Do|Rubik:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap");
 
 html,
 body {
@@ -1057,6 +1059,11 @@ ol {
 -----------------------*/
 
 .about-pic {
+	height: 900px;
+	position: relative;
+}
+
+.about-picDifferentPrice {
 	height: 1050px;
 	position: relative;
 }
@@ -1087,6 +1094,8 @@ ol {
 	padding-left: 60px;
 	padding-top: 50px;
 	height: 1050px;
+	overflow-y: scroll;
+	overflow-x: hidden;
 }
 
 .about-text .section-title h2 {
@@ -1750,6 +1759,10 @@ ol {
 	margin-right: 30px;
 }
 
+.blog-item .bi-pic  img{
+	height: 175px;
+	width: 300px;
+}
 .blog-item .bi-text {
 	overflow: hidden;
 }
@@ -1952,14 +1965,14 @@ ol {
 .blog-details-section {
 	padding-top: 0;
 	padding-bottom: 60px;
+
 }
 
 .blog-details-text {
 	background: #ffffff;
 	padding-top: 60px;
 	
-	
-	margin-top: 100px;
+
 }
 
 .blog-details-text .bd-title {
@@ -2231,9 +2244,11 @@ ol {
 }
 
 .blog-details-text .bd-author {
-	background: #f5f5f5;
+	background: #ffffff;
 	padding: 50px;
 	margin-bottom: 60px;
+	height: 500px;
+	overflow: scroll;
 }
 
 .blog-details-text .bd-author .avatar-pic {
@@ -2249,19 +2264,54 @@ ol {
 
 .blog-details-text .bd-author .avatar-text {
 	overflow: hidden;
+	margin-bottom: 7px;
+	padding-top: 7px;
+	border-bottom: 1px solid ;
+	border-color: rgb(223, 222, 222);
 }
 
+.blog-details-text  .Titulo-text {
+	overflow: hidden;
+	margin-bottom: 5px;
+	text-align: center;
+
+	
+}
+
+.blog-details-text  .Titulo-text h4 {
+	padding-top: 25px;
+	font-family: "Nothing You Could Do", cursive;
+	padding-bottom: 25px;
+	font-weight: 800;
+	font-size: 35px;
+	background-color:#171244;
+	color: #ffffff;
+	
+	
+}
 .blog-details-text .bd-author .avatar-text h4 {
 	color: #111111;
 	font-weight: 700;
+	font-size: 18px;
 	text-transform: uppercase;
 	margin-bottom: 8px;
+}
+.blog-details-text .bd-author .avatar-text h3 {
+	color: #055e0c;
+	font-weight: 800;
+	font-size: 25px;
+	margin-bottom: 8px;
+}
+.blog-details-text .bd-author .avatar-text h4:hover {
+	color: #362596;
+	cursor: pointer;
+	
 }
 
 .blog-details-text .bd-author .avatar-text p {
 	color: #444444;
-	font-size: 17px;
-	line-height: 30px;
+	font-size: 11px;
+	line-height: 18px;
 }
 
 .blog-details-text .bd-author .avatar-text .at-social a {
@@ -2348,6 +2398,17 @@ ol {
 	border: none;
 }
 
+
+.blog-details-text .bd-comment-form .leave-form form select {
+	height: 50px;
+	width: 100%;
+	padding-left: 20px;
+	font-size: 14px;
+	color: #444444;
+	background: #f2f2f2;
+	margin-bottom: 20px;
+	border: none;
+}
 .blog-details-text .bd-comment-form .leave-form form input::-webkit-input-placeholder {
 	color: #444444;
 }
