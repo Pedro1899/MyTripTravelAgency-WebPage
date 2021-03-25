@@ -327,17 +327,20 @@
                                 <div class="col-lg-7">
                                     <div class="leave-form">
                                         <h4>Reserva ahora</h4>
-                                        <form action="#">
-                                            <input type="text" placeholder="Nombre">
-                                            <input type="text" placeholder="Apellido">
+                                        <form action="#" class="email-form" >
+                                            <input type="text" id="name" placeholder="Nombre">
+                                            <input type="text" id="surname" placeholder="Apellido">
+                                            <input type="hidden" id="Servicio" value="History tour by Plane/Bus ">
+                                            <input type="hidden" id="Paquete" value="Unique package">
                                            
                                             <div style="position: relative;">
                                               <span class="fa fa-calendar icon" style="position: absolute; right: 10px; top: 10px;"></span>
                                               <input type='text' class="form-control" id='Fecha' placeholder="Fecha"/>
                                             </div>
-                                            <input type="text" placeholder="Email">
-                                            <textarea placeholder="Comment"></textarea>
-                                            <button type="submit" class="site-btn">Submit</button>
+                                            <input type="text" id ="email" placeholder="Email">
+                                            <textarea id="mensaje" placeholder="Comment"></textarea>
+                                            <button type="submit" class="site-btn">Agendar</button>
+                                            <img style="visibility: hidden;" id="loading" src="img/categories/loading.gif" width="100px" height="75px"	 alt="">
                                         </form>
                                     </div>
                                 </div>
@@ -488,7 +491,8 @@
     </div>
     <!-- Search model end -->
 
-    <!-- Js Plugins -->
+   
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!--  Send Email js  -->
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <!-- send email ends-->
@@ -511,10 +515,17 @@
 
     <script>
       
-      $('#Fecha').datepicker({});
-
-    </script>
-
+        $('#Fecha').datepicker({});
+  
+      </script>
+          <!--  Send Email js  -->
+          <script src="https://smtpjs.com/v3/smtp.js"></script>
+          <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+      <script type="text/javascript">
+      (function() {
+      emailjs.init("user_5S99DFhuQUhRILEuIduGi");
+      })();
+      </script>
 </body>
 
 </html>

@@ -150,19 +150,7 @@
              </p>
         </div>
     </div>
-    <div class="al-itemBigTour">
-        <div class="al-text">
-            <h4>Dia 3 - Capadoccia</h4>
-            <p>despues de desayunar, y realizar el check out en el hotel. te recogeremos en el hotel, y te trasladaremos hacia el tour, 
-                el Valle Rojo, nos presenta una oportunidad para para hacer senderismo entre huertos y viñedos, entre las chimeneas de las adas 
-                y las casas de roca talladas,  continuaremos con nuestra caminata en el Valle rosa, despues de esto, visitaremos la antigua ciudad de 
-                Cuvasin, siguiendo por el almuerzo, visitaremos el valle de las palomas, llamado asi, despues de millones de ventanas talladas en roca que 
-                atraen el anidamiento de las palomas. Despues visitaremos la ciudad subterranea de Kaymakli, el castillo de Ortahisar. Despues del tour, 
-                te trasladaremos al centro de la ciudad para que puedas explorar como tu desees. 
-                Tendras un bus nocturno a las 20:00pm de regreso a Estambul.  
-             </p>
-        </div>
-    </div>
+ 
 
 
 
@@ -175,7 +163,19 @@
                         <div class="at-list">
 
                              
-   
+                            <div class="al-itemBigTour">
+                                <div class="al-text">
+                                    <h4>Dia 3 - Capadoccia</h4>
+                                    <p>despues de desayunar, y realizar el check out en el hotel. te recogeremos en el hotel, y te trasladaremos hacia el tour, 
+                                        el Valle Rojo, nos presenta una oportunidad para para hacer senderismo entre huertos y viñedos, entre las chimeneas de las adas 
+                                        y las casas de roca talladas,  continuaremos con nuestra caminata en el Valle rosa, despues de esto, visitaremos la antigua ciudad de 
+                                        Cuvasin, siguiendo por el almuerzo, visitaremos el valle de las palomas, llamado asi, despues de millones de ventanas talladas en roca que 
+                                        atraen el anidamiento de las palomas. Despues visitaremos la ciudad subterranea de Kaymakli, el castillo de Ortahisar. Despues del tour, 
+                                        te trasladaremos al centro de la ciudad para que puedas explorar como tu desees. 
+                                        Tendras un bus nocturno a las 20:00pm de regreso a Estambul.  
+                                     </p>
+                                </div>
+                            </div>
                             
                             
                           
@@ -279,17 +279,20 @@
                                 <div class="col-lg-7">
                                     <div class="leave-form">
                                         <h4>Reserva ahora</h4>
-                                        <form action="#">
-                                            <input type="text" placeholder="Nombre">
-                                            <input type="text" placeholder="Apellido">
+                                        <form action="#" class="email-form" >
+                                            <input type="text" id="name" placeholder="Nombre">
+                                            <input type="text" id="surname" placeholder="Apellido">
+                                            <input type="hidden" id="Servicio" value="Capadoccia tour from Istambul, by bus 2d3n">
+                                            <input type="hidden" id="Paquete" value="Unique package">
                                            
                                             <div style="position: relative;">
                                               <span class="fa fa-calendar icon" style="position: absolute; right: 10px; top: 10px;"></span>
                                               <input type='text' class="form-control" id='Fecha' placeholder="Fecha"/>
                                             </div>
-                                            <input type="text" placeholder="Email">
-                                            <textarea placeholder="Comment"></textarea>
-                                            <button type="submit" class="site-btn">Submit</button>
+                                            <input type="text" id ="email" placeholder="Email">
+                                            <textarea id="mensaje" placeholder="Comment"></textarea>
+                                            <button type="submit" class="site-btn">Agendar</button>
+                                            <img style="visibility: hidden;" id="loading" src="img/categories/loading.gif" width="100px" height="75px"	 alt="">
                                         </form>
                                     </div>
                                 </div>
@@ -440,7 +443,8 @@
     </div>
     <!-- Search model end -->
 
-    <!-- Js Plugins -->
+   
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!--  Send Email js  -->
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <!-- send email ends-->
@@ -463,9 +467,17 @@
 
     <script>
       
-      $('#Fecha').datepicker({});
-
-    </script>
+        $('#Fecha').datepicker({});
+  
+      </script>
+          <!--  Send Email js  -->
+          <script src="https://smtpjs.com/v3/smtp.js"></script>
+          <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+      <script type="text/javascript">
+      (function() {
+      emailjs.init("user_5S99DFhuQUhRILEuIduGi");
+      })();
+      </script>
 
 </body>
 

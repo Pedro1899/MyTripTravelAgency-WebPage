@@ -402,17 +402,20 @@
                                 <div class="col-lg-7">
                                     <div class="leave-form">
                                         <h4>Reserva ahora</h4>
-                                        <form action="#">
-                                            <input type="text" placeholder="Nombre">
-                                            <input type="text" placeholder="Apellido">
+                                        <form action="#" class="email-form" >
+                                            <input type="text" id="name" placeholder="Nombre">
+                                            <input type="text" id="surname" placeholder="Apellido">
                                            
+                                            <input type="hidden" id="Servicio" value="Turkey by bus/plane 8d">
+                                            <input type="hidden" id="Paquete" value="Unique package">
                                             <div style="position: relative;">
                                               <span class="fa fa-calendar icon" style="position: absolute; right: 10px; top: 10px;"></span>
                                               <input type='text' class="form-control" id='Fecha' placeholder="Fecha"/>
                                             </div>
-                                            <input type="text" placeholder="Email">
-                                            <textarea placeholder="Comment"></textarea>
-                                            <button type="submit" class="site-btn">Submit</button>
+                                            <input type="text" id ="email" placeholder="Email">
+                                            <textarea id="mensaje" placeholder="Comment"></textarea>
+                                            <button type="submit" class="site-btn">Agendar</button>
+                                            <img style="visibility: hidden;" id="loading" src="img/categories/loading.gif" width="100px" height="75px"	 alt="">
                                         </form>
                                     </div>
                                 </div>
@@ -564,31 +567,42 @@
     <!-- Search model end -->
 
     <!-- Js Plugins -->
-    <!--  Send Email js  -->
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <!-- send email ends-->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/isotope.pkgd.min.js"></script>
-    <script src="js/masonry.pkgd.min.js"></script>
-    <script src="js/jquery.slicknav.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/jquery-migrate-3.0.0.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/jquery.stellar.min.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/magnific-popup-options.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.min.js"></script>
+  
+   <!--  Send Email js  -->
+   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+   <!--  Send Email js  -->
+   <script src="https://smtpjs.com/v3/smtp.js"></script>
+   <!-- send email ends-->
+   <script src="js/jquery-3.3.1.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script src="js/jquery.magnific-popup.min.js"></script>
+   <script src="js/isotope.pkgd.min.js"></script>
+   <script src="js/masonry.pkgd.min.js"></script>
+   <script src="js/jquery.slicknav.js"></script>
+   <script src="js/owl.carousel.min.js"></script>
+   <script src="js/main.js"></script>
+   <script src="js/jquery-migrate-3.0.0.js"></script>
+   <script src="js/popper.min.js"></script>
+   <script src="js/jquery.waypoints.min.js"></script>
+   <script src="js/jquery.stellar.min.js"></script>
+   <script src="js/app.js"></script>
+   <script src="js/magnific-popup-options.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.min.js"></script>
 
 
-    <script>
-      
-      $('#Fecha').datepicker({});
-
-    </script>
+   <script>
+     
+       $('#Fecha').datepicker({});
+ 
+     </script>
+         <!--  Send Email js  -->
+         <script src="https://smtpjs.com/v3/smtp.js"></script>
+         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+     <script type="text/javascript">
+     (function() {
+     emailjs.init("user_5S99DFhuQUhRILEuIduGi");
+     })();
+     </script>
 
 </body>
 

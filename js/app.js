@@ -12,14 +12,47 @@ submitForm)
 function submitForm(e){
   
    e.preventDefault();
-  var name = document.getElementById("Nombre").value;
-  var email = document.getElementById("email").value;
-  var message = document.getElementById("message").value;
-   /* var email = document.querySelector("email").value;
-    var message = document.querySelector("message").value;*/
 
- sendEmail(name, email, message)
 
+  
+
+/*
+  var paquete=  document.getElementById("Paquete").value,
+   var fecha = document.getElementById("Fecha").value,
+   var observaciones = document.getElementById("mensaje").value
+  */
+   
+var temp={  
+service:document.getElementById("Servicio").value,
+Name: document.getElementById("name").value,
+package:  document.getElementById("Paquete").value,
+date: document.getElementById("Fecha").value,
+message: document.getElementById("mensaje").value,
+surname: document.getElementById("surname").value,
+
+email:  document.getElementById("email").value,
+}
+
+ //sendEmail(name, email, message)
+ document.getElementById("loading").style.visibility = "visible"
+
+ emailjs.send("service_c3xrijf","template_n67m47d",temp)
+.then(function(res){
+    swal({
+        title: "Tour agendado!",
+        text: "Bienvenido a turquia!",
+        icon: "success",
+        button: "ok!",
+      })
+      document.getElementById("name").value=''
+      document.getElementById("Fecha").value =''
+      document.getElementById("mensaje").value=''
+      document.getElementById("surname").value=''
+       document.getElementById("email").value=''
+        document.getElementById("mensaje").value=''
+        document.getElementById("loading").style.visibility = "hidden"
+    
+})
     
 }
 
@@ -36,7 +69,7 @@ function sendEmail(name, email, message){
         Subject : 'prueba',
         Body : "hola"
     }).then(
-      message => alert('mail has been succesfully send')
+      message => alert('mail has been succesfully send ' + name + ' '+ email + ' ' +message )
 
     );
 }
