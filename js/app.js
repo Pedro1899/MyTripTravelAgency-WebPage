@@ -21,6 +21,8 @@ function submitForm(e){
    var fecha = document.getElementById("Fecha").value,
    var observaciones = document.getElementById("mensaje").value
   */
+  
+    
    
 var temp={  
 service:document.getElementById("Servicio").value,
@@ -29,7 +31,9 @@ package:  document.getElementById("Paquete").value,
 date: document.getElementById("Fecha").value,
 message: document.getElementById("mensaje").value,
 surname: document.getElementById("surname").value,
-
+Guest: document.getElementById("guest").value,
+Adult:document.getElementById("adult").value,
+Phone:document.getElementById("phone").value,
 email:  document.getElementById("email").value,
 }
 
@@ -51,8 +55,13 @@ email:  document.getElementById("email").value,
        document.getElementById("email").value=''
         document.getElementById("mensaje").value=''
         document.getElementById("loading").style.visibility = "hidden"
+        document.getElementById("adult").value='adult'
+        document.getElementById("guest").value='0'
+        document.getElementById("phone").value=''
     
 })
+
+
     
 }
 

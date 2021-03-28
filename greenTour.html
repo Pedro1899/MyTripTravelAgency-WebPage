@@ -84,6 +84,8 @@
                     <div class="about-pic set-bg" data-setbg="img/categories/valleVerde.jpg">
                      
                     </div>
+                    <div class='priceTour'>
+                        <h2>€40 por persona</h2></div>
                 </div>
                 <div class="col-lg-8 p-0">
                     <div class="about-text">
@@ -187,30 +189,8 @@
                        
                      <div class="bd-comment-form">
                             <div class="row">
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="pricing-item">
-                                         <div class="pi-price">
-                                             <h2>€40</h2>
-                                             <span>**</span>
-                                         </div>
-                                         <div class="pi-title">
-                                             <h3>Tour verde</h3>
-                                         </div>
-                                         <div class="pi-text">
-                                             <ul>
-                                                 <li>Recoger y dejar en el hote</li>
-                                                 <li>Guia profesional en español</li>
-                                                 <li>Entradas a atracciones</li>
-                                                 <li>Almuerzo</li>
-                                                 <li>Transporte</li>
-                                                 
-                                             </ul>
-                                            
-                                            <!--<a href="#" class="primary-btn">reserva</a>--> 
-                                         </div>
-                                     </div>
-                                 </div>
-                                <div class="col-lg-5">
+                          
+                                <div class="col-lg-7">
                                     <div class="leave-form">
                                         <h4>Reserva ahora</h4>
                                         <form action="#" class="email-form" >
@@ -218,7 +198,32 @@
                                             <input type="text" id="surname" placeholder="Apellido">
                                             <input type="hidden" id="Servicio" value="Green Tour">
                                             <input type="hidden" id="Paquete" value="Unique package">
-                                           
+                                            <input type="text" id="phone" placeholder="Telefono">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-lg-5">
+                                                        <select name="" id="adult" >
+                                                <option value="adult" >Adulto</option>
+                                                <option value="kid">Niño</option>
+                                            </select>
+                                                        </div>
+                                                        <div class="col-lg-1"></div>
+                                                        <div class="col-lg-5">
+                                                            <select name="" id="guest" >
+                                                <option value="0" >Cuantas personas</option>
+                                                <option value="1">uno</option>
+                                                <option value="2">dos</option>
+                                                <option value="3">tres</option>
+                                                <option value="4">cuatro</option>
+                                                <option value="5">cinco</option>
+                                                <option value="+5">mas de cinco</option>
+                                            
+
+                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            
                                             <div style="position: relative;">
                                               <span class="fa fa-calendar icon" style="position: absolute; right: 10px; top: 10px;"></span>
                                               <input type='text' class="form-control" id='Fecha' placeholder="Fecha"/>
