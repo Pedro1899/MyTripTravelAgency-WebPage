@@ -9,6 +9,9 @@
 document.querySelector(".email-form").addEventListener("submit",
 submitForm)
 
+document.querySelector(".catalog-form").addEventListener("submit",
+sendCatalog)
+
 function submitForm(e){
   
    e.preventDefault();
@@ -65,20 +68,26 @@ email:  document.getElementById("email").value,
     
 }
 
-//send email info
-function sendEmail(name, email, message){
-    
+function sendCatalog(e){
   
-    Email.send({
-        Host : "smtp.yourisp.com",
-        Username : "viajaenturquia@gmail.com",
-        Password : "capadoccia2021",
-        To : 'viajaenturquia@gmail.com',
-        From : "viajaenturquia@gmail.com",
-        Subject : 'prueba',
-        Body : "hola"
-    }).then(
-      message => alert('mail has been succesfully send ' + name + ' '+ email + ' ' +message )
 
-    );
+
+ alert('hi')
+
+/*
+ var paquete=  document.getElementById("Paquete").value,
+  var fecha = document.getElementById("Fecha").value,
+  var observaciones = document.getElementById("mensaje").value
+ */
+ 
+   
+  
+
+
+//sendEmail(name, email, message)
+
+
+
+   
 }
+//send email info
